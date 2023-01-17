@@ -9,6 +9,19 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
+/**
+ * 
+ * Testul facut la tema nr 2 in Postman, va fi facut acum in RestAssured
+- https://fakerestapi.azurewebsites.net/api/v1/Books
+- Acelasi test in 2 modalitati diferite.
+- request body va fi dat sub forma unui fisier extern json.
+- assertam status code 200 si faptul ca raspunsul contine pe elementul “id” valoarea trimisa de noi.
+- Pentru rest assured pathul de assert este similar codului scris la curs, deci asa:
+- postREquest.jsonPath().getString(”id");
+ * @author cristinel.ungureanu
+ *
+ */
+
 public class Homework2MadeInRestAssured {
 
 	@Test
