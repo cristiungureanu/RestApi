@@ -13,7 +13,7 @@ public class SchemaValidationExample {
 	public void validateSchema() {
 		
 		Response result = given()
-				.get("https://keytrcrud.herokuapp.com/api/users/63a3398e584e3500157d90bc")
+				.get("https://keytrcrud.herokuapp.com/api/users/63c806172708c80016073e0a")
 				.then()
 				.statusCode(200)
 				.log().all()

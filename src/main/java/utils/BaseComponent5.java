@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-public class BaseComponent2 {
+public class BaseComponent5 {
 	
 	public static RequestSpecification requestSpec;
 	public static ResponseSpecification responseSpec;
@@ -29,7 +29,7 @@ public class BaseComponent2 {
 		
 		requestSpec =  new RequestSpecBuilder()
 				.setBaseUri("https://keytodorestapi.herokuapp.com/")
-				.setBasePath("api/save/")
+				.setBasePath("api/v1/Books")
 				.setContentType(ContentType.JSON)
 				.addHeader("accept", "application/json")
 				.build();
